@@ -1,6 +1,21 @@
 // class Person{
 //     name: string;
 // }
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 // const person = new Person();
 // person.name = "sachin"
 // console.log(person)
@@ -16,13 +31,73 @@
 // const person = new Person("Sachin")
 // console.log(person.getName())
 // console.log(person.name)
-var Person = /** @class */ (function () {
-    function Person(private, name) {
+// class Person{
+//     public constructor(private
+//         name: string
+//     ) {}
+//     public getName():string{
+//         return this.name;
+//     }
+// }
+// const person = new Person("Sachin");
+// console.log(person.getName())
+var myProfile = /** @class */ (function () {
+    function myProfile(name, email, age) {
+        this.name = name;
+        this.email = email;
+        this.age = age;
     }
-    Person.prototype.getName = function () {
+    myProfile.prototype.printData = function () {
+        console.log(this.name);
+        console.log(this.email);
+        console.log(this.age);
+    };
+    myProfile.prototype.getData = function () {
         return this.name;
     };
-    return Person;
+    return myProfile;
 }());
-var person = new Person("Sachin");
-console.log(person.getName());
+// const data = new myProfile("sachin","sachin@gmail.com",23)
+// data.printData();
+// console.log(data.getData())
+var bottleMaker = /** @class */ (function () {
+    function bottleMaker(name) {
+        this.name = name;
+        this.price = 12;
+    }
+    return bottleMaker;
+}());
+var metalBottleMaker = /** @class */ (function (_super) {
+    __extends(metalBottleMaker, _super);
+    function metalBottleMaker(name, price) {
+        return _super.call(this, name) || this;
+    }
+    metalBottleMaker.prototype.getValue = function () {
+        console.log(this.name);
+        // console.log(this.price)
+    };
+    return metalBottleMaker;
+}(bottleMaker));
+// const value1 = new metalBottleMaker('milton',12)
+// value1.getValue()
+// protected class
+var Relation = /** @class */ (function () {
+    function Relation(who) {
+        this.who = who;
+    }
+    return Relation;
+}());
+var Me = /** @class */ (function (_super) {
+    __extends(Me, _super);
+    function Me(who) {
+        var _this = _super.call(this, who) || this;
+        _this.mySelf = "sachin";
+        return _this;
+    }
+    Me.prototype.getRelation = function () {
+        console.log("".concat(this.who, " and ").concat(this.mySelf, " are brother."));
+    };
+    return Me;
+}(Relation));
+var m1 = new Me('saurabh');
+m1.getRelation();

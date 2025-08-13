@@ -90,5 +90,14 @@ class Me extends Relation{
     }
 }
 
-const m1 = new Me('saurabh')
-m1.getRelation()
+// const m1 = new Me('saurabh')
+// m1.getRelation()
+
+class User{
+    constructor(public readonly name: string){}
+    changeName() {
+        // this.name = "sachin"
+    }
+}
+
+const m1 = new User("Sachin")

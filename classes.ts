@@ -100,4 +100,13 @@ class User{
     }
 }
 
-const m1 = new User("Sachin")
+// const m1 = new User("Sachin")
+
+class User1{
+    constructor(public name: string, public age: number, public gender?: string) {
+    }
+}
+const u1 = new User1("sachin",23, "male")
+const u2 = new User1("lagbatak",18)
+console.log(u1)
+console.log(u2)

@@ -81,12 +81,14 @@ var metalBottleMaker = /** @class */ (function (_super) {
 // const value1 = new metalBottleMaker('milton',12)
 // value1.getValue()
 // protected class
+// Example of getting relation via protected class
 var Relation = /** @class */ (function () {
     function Relation(who) {
         this.who = who;
     }
     return Relation;
 }());
+// For getting the relation 
 var Me = /** @class */ (function (_super) {
     __extends(Me, _super);
     function Me(who) {
@@ -99,5 +101,27 @@ var Me = /** @class */ (function (_super) {
     };
     return Me;
 }(Relation));
-var m1 = new Me('saurabh');
-m1.getRelation();
+// const m1 = new Me('saurabh')
+// m1.getRelation()
+var User = /** @class */ (function () {
+    function User(name) {
+        this.name = name;
+    }
+    User.prototype.changeName = function () {
+        // this.name = "sachin"
+    };
+    return User;
+}());
+// const m1 = new User("Sachin")
+var User1 = /** @class */ (function () {
+    function User1(name, age, gender) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+    }
+    return User1;
+}());
+var u1 = new User1("sachin", 23, "male");
+var u2 = new User1("lagbatak", 18);
+console.log(u1);
+console.log(u2);

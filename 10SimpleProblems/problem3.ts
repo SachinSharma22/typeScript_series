@@ -14,18 +14,6 @@ const b: Point = { x: 4, y: 3 };
 
 console.log(distance(a, b));
 
-
-// 8. Classes
-
-// Create a class Car with properties make, model, and year.
-// Add a method getCarInfo() that returns a string with the car details.
-// Then create an object and call the method.
-
-// 9. Inheritance
-
-// Extend the Car class to a ElectricCar class that has an additional property batteryLife.
-// Override getCarInfo() to include battery life in the string.
-
 // 10. Async / Promise with Types
 
 // Write an async function fetchData(url: string): Promise<string> that simulates fetching data (use setTimeout to return "Data from ${url}").

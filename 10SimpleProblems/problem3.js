@@ -6,14 +6,6 @@ function distance(p1, p2) {
 var a = { x: 3, y: 2 };
 var b = { x: 4, y: 3 };
 console.log(distance(a, b));
-// 4. Interfaces
-// Create an interface Person with name (string), age (number), and email (string).
-// Write a function printPerson(person: Person) that logs their details.
-// 5. Optional & Readonly
-// Extend the Person interface with an optional phone?: string and a readonly id: number.
-// Try modifying the id after creating a person object — TypeScript should show an error.
-// 6. Generics
-// Write a generic function wrapInArray<T>(value: T): T[] that takes a value of any type and returns it wrapped inside an array.
 // 7. Enums
 // Define an enum Role with values "Admin", "User", "Guest".
 // Write a function checkRole(role: Role) that prints different messages depending on the role.

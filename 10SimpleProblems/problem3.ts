@@ -15,19 +15,6 @@ const b: Point = { x: 4, y: 3 };
 console.log(distance(a, b));
 
 
-// 5. Optional & Readonly
-
-// Extend the Person interface with an optional phone?: string and a readonly id: number.
-// Try modifying the id after creating a person object — TypeScript should show an error.
-
-// 6. Generics
-
-// Write a generic function wrapInArray<T>(value: T): T[] that takes a value of any type and returns it wrapped inside an array.
-// 7. Enums
-
-// Define an enum Role with values "Admin", "User", "Guest".
-// Write a function checkRole(role: Role) that prints different messages depending on the role.
-
 // 8. Classes
 
 // Create a class Car with properties make, model, and year.

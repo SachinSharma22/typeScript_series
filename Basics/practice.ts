@@ -23,3 +23,13 @@ enum fruits {
 // console.log(fruits);
 // console.log("Fruit is: ",fruits.apple)
 
+// Heterogeneous enums
+enum studentDetail {
+    name="sachin",
+    age=23,
+    email="sachin@gmail.com",
+    mobileNo = 123456,
+    address = "Chandrawar Rasra Ballia"
+} 
+console.log(studentDetail);
+console.log("Age of the student is : ",studentDetail.age)

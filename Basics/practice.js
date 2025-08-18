@@ -19,3 +19,14 @@ var fruits;
 })(fruits || (fruits = {}));
 // console.log(fruits);
 // console.log("Fruit is: ",fruits.apple)
+// Heterogeneous enums
+var studentDetail;
+(function (studentDetail) {
+    studentDetail["name"] = "sachin";
+    studentDetail[studentDetail["age"] = 23] = "age";
+    studentDetail["email"] = "sachin@gmail.com";
+    studentDetail[studentDetail["mobileNo"] = 123456] = "mobileNo";
+    studentDetail["address"] = "Chandrawar Rasra Ballia";
+})(studentDetail || (studentDetail = {}));
+console.log(studentDetail);
+console.log("Age of the student is : ", studentDetail.age);

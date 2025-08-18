@@ -14,3 +14,7 @@ toupe1.pop()
 console.log("Length of touple is ", toupe1.length)
 console.log(toupe1)
 
+// Update of modefy the touple value
+toupe1[0] = 55;
+console.log("First value is changed",toupe1[0])
+

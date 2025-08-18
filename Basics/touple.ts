@@ -18,3 +18,7 @@ console.log(toupe1)
 toupe1[0] = 55;
 console.log("First value is changed",toupe1[0])
 
+// Clear touple field
+
+toupe1 = [0,""]
+console.log("Empty touple is ", toupe1)

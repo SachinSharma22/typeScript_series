@@ -17,3 +17,9 @@ function sum1(...numbers) {
 }
 // Arrow function
 const divide = (a, b) => a / b;
+let seeker = {
+    title: "Software Developer",
+    JobId: 220093,
+    location: "noida"
+};
+console.log(seeker.location + " " + seeker.title);

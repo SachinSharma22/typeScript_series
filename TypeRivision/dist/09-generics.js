@@ -10,4 +10,25 @@ function getFirstEle(arr) {
 }
 let myNum = getFirstEle([1, 2, 3]);
 let myName = getFirstEle(["rohit", "Sunakhsi"]);
-console.log(myName + " " + myNum);
+let StringNumberPair = {
+    key: "age",
+    val: 23
+};
+//generic classes
+class dataStorage {
+    constructor() {
+        this.data = [];
+    }
+    addItem(item) {
+        this.data.push(item);
+    }
+    removeItem(item) {
+        this.data = this.data.filter((i) => i !== item);
+    }
+    getItems() {
+        return [...this.data];
+    }
+}
+let textStorage = new dataStorage();
+textStorage.addItem("Hello");
+//generic constraints

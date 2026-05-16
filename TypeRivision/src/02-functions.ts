@@ -22,3 +22,16 @@ function sum1(...numbers: number[]) : number {
 
 // Arrow function
 const divide = (a: number, b:number) => a/b;
+
+interface Job  {
+    title: string,
+    JobId: number,
+    location: string
+}
+let seeker: Job ={
+    title: "Software Developer",
+    JobId: 220093,
+    location: "noida"
+};
+
+console.log(seeker.location + " " + seeker.title);
